@@ -33,7 +33,7 @@
     </tr>
   </thead>
   <tbody>
-    <% @movies.each do |movie| %>
+    <!--<% @movies.each do |movie| %>
       <tr>
         <td>
           <%= movie.title %>
@@ -48,7 +48,8 @@
           <%= link_to "More about #{movie.title}", movie_path(movie) %>
         </td>
       </tr>
-    <% end %>
+    <% end %> -->
+    <%= render partial: 'movie' %>
   </tbody>
 </table>
 <%= link_to 'Add new movie', new_movie_path, class: 'btn btn-primary' %>
